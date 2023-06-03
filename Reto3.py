@@ -37,11 +37,11 @@ while True:
             print(instructores2557861)
 
     elif opcion == 2:
-        buscar = input("Ingrese el nombre del instructor que desea buscar: ")
-        buscar = buscar.lower()
+        inst = input("Ingrese el nombre del instructor que desea buscar: ")
+        inst = inst.lower()
         print("Se encontraron los siguientes resultados:")
         for inst, datos in instructores2557861.items():
-            if inst.startswith(buscar):
+            if inst.startswith(inst):
                 print(inst)
                 print(f"Materia: {instructores2557861[inst]['Materia']} \nNúmero de teléfono: {instructores2557861[inst]['Telefono']}")
             else:

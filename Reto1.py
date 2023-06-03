@@ -2,7 +2,7 @@ op = 1
 instructores=['Jennifer', 'Jonathan', 'Andres']
 while op == 1:
     print(instructores)
-    opciones=int(input("Digite 1 para agregar un instructor. \nDigite 2 para modicar a los instructore. \nDigite 3 para borrar un instructor. \nDigite 4 para enlistar un instructor. \nDigite 5 para buscar un instructor. \nDigite 6 para ordenar la lista alfabeticamente. \nDigite 7 para salir.\n"))
+    opciones=int(input("Digite 1 para agregar un instructor. \nDigite 2 para modificar a los instructore. \nDigite 3 para borrar un instructor. \nDigite 4 para enlistar un instructor. \nDigite 5 para buscar un instructor. \nDigite 6 para ordenar la lista alfabeticamente. \nDigite 7 para salir.\n"))
     if opciones == 1:
         instructores.append(input("Ingrese el nombre de instructor que desea añadir: "))
         print(f"Se añadio un nuevo instructor a la lista \n{instructores}")
@@ -14,7 +14,7 @@ while op == 1:
         instructores[modificar]=nuevo
         print(f"Se ha modificado la lista añadiendo al intructor@ {nuevo}\n{instructores}")
     elif opciones == 3:  
-        opcion=int(input("Digite 1 para boorar un instructor por su nombre. \nDigite 2 para borrar un instructor por su posicion especifica en la lista. \nDigite 3 para borrar el ultimo instructor de la lista. \nDigite 4 para borrar toda la lista. \n"))
+        opcion=int(input("Digite 1 para borrar un instructor por su nombre. \nDigite 2 para borrar un instructor por su posicion especifica en la lista. \nDigite 3 para borrar el ultimo instructor de la lista. \nDigite 4 para borrar toda la lista. \n"))
         if opcion == 1:
             instructores.remove(input("Ingrese el nombre del instructor que desea borrar"))
             print(instructores)
